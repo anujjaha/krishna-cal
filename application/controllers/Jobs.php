@@ -151,7 +151,7 @@ class Jobs extends CI_Controller {
 					$jobDetails = $this->job_model->getJobDetailsByJobId($jobId);
 					$fileLink 	= getPdfReceipt($jobInfo, $jobDetails);
 					$content 	= getReceiptContent($jobInfo, $jobDetails);
-					send_mail($userInfo->emailid, FROM_EMAIL_ID, FROM_EMAIL_NAME, "", $fileLink, $content);	
+					send_mail($userInfo->emailid, FROM_EMAIL_ID, FROM_EMAIL_NAME, CREATED_NEW_JOB_SUBJECT, $fileLink, $content);
 				}
 				
 			}
