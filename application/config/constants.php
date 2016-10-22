@@ -100,7 +100,9 @@ define("CREDIT", 'CREDIT');
 
 define("SEND_SMS", FALSE);
 define("SEND_EMAIL", TRUE);
-define("FROM_EMAIL_ID", 'er.anujjaha@gmail.com');
-define("FROM_EMAIL_NAME", 'Anuj Jaha');
+define("FROM_EMAIL_ID", 'krishna.multyprint@gmail.com');
+define("FROM_EMAIL_NAME", 'Krishna Multi Print (India) Pvt Ltd.');
 define("EMAIL_PDF_FILE_PATH", "/home/jobkrishna/public_html/calendar/pdf_receipt/K-Receipt.pdf");
 define("CREATED_NEW_JOB_SUBJECT", "Created New Job Krishna Multi Print (India) Pvt Ltd.");
+define("SMTP_EMAIL_USERNAME", "er.anujjaha@gmail.com");
+define("SMTP_EMAIL_PASSWORD", "aj@anujjaha");
