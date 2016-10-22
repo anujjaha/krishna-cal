@@ -251,8 +251,8 @@ function send_sms($mobile, $sms_text = null)
 
 function getPdfReceipt($jobInfo, $jobDetails)
 {
-	$compName = $jobInfo['company_name'] ? $jobInfo['company_name'] : $jobInfo['name'];
-	$paymentTerms = getJobPaymentDetails($jobInfo['job_id']);
+	$compName 		= $jobInfo['company_name'] ? $jobInfo['company_name'] : $jobInfo['name'];
+	$paymentTerms 	= getJobPaymentDetails($jobInfo['job_id']);
 
 	$phtml = '<table align="center" border="2" style="width: 100%; border:1px solid;">
 		<tr>
@@ -361,6 +361,9 @@ function getPdfReceipt($jobInfo, $jobDetails)
 
 function getReceiptContent($jobInfo, $jobDetails)
 {
+	$compName 		= $jobInfo['company_name'] ? $jobInfo['company_name'] : $jobInfo['name'];
+	$paymentTerms 	= getJobPaymentDetails($jobInfo['job_id']);
+
 	$phtml = '<table align="center" border="2" style="width: 100%; border:1px solid;">
 		<tr>
 		<td width="50%" style=" border:1px solid;">
